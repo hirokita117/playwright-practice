@@ -1,0 +1,19 @@
+have_fun: true  # トーンを落ち着かせたい場合は false（軽めのジョーク等を抑制）。 
+
+code_review:
+  disable: false          # レビュー機能のオン/オフ
+  comment_severity_threshold: MEDIUM  # 指摘する最小重大度: LOW|MEDIUM|HIGH|CRITICAL
+  max_review_comments: 50  # コメント総数の上限。スパム化防止。-1 で無制限
+  pull_request_opened:
+    help: true           # 使い方ヘルプの自動投稿
+    summary: true         # 変更点サマリを自動投稿
+    code_review: true     # 自動コードレビューを実行
+
+ignore_patterns:
+  - "**/*.min.*"
+  - "**/package-lock.json"
+  - "**/pnpm-lock.yaml"
+  - "**/yarn.lock"
+  - "**/*.snap"
+  - "**/*.svg"
+  - "**/*.md"
